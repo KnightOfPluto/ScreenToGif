@@ -2154,26 +2154,6 @@
                                                                 IsChecked="{Binding Source={x:Static u:UserSettings.All}, Path=SaveAsProjectToo, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                                         </Grid>
 
-                                        <n:ExtendedCheckBox Grid.Row="2" x:Name="UploadFileCheckBox" Text="{DynamicResource S.SaveAs.SaveOptions.UploadFile}" Margin="10,3,3,3"
-                                                            IsChecked="{Binding Source={x:Static u:UserSettings.All}, Path=UploadFile, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-
-                                        <Grid Grid.Row="3">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition/>
-                                                <ColumnDefinition Width="30"/>
-                                            </Grid.ColumnDefinitions>
-
-                                            <ComboBox Grid.Column="0" Name="UploadComboBox" Margin="20,3,3,3" Height="23" SelectedValuePath="Tag"
-                                                      SelectedValue="{Binding Source={x:Static u:UserSettings.All}, Path=LatestUploadService, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                                      Visibility="{Binding IsChecked, ElementName=UploadFileCheckBox, Converter={StaticResource Bool2Visibility}}" ToolTip="{DynamicResource S.SaveAs.SaveOptions.UploadDestination}">
-                                                <ComboBoxItem Tag="{x:Static u:UploadService.None}" Content="{DynamicResource S.Options.Upload.Pick.Destination}"/>
-                                                <ComboBoxItem Tag="{x:Static u:UploadService.ImgurAnonymous}" Content="{DynamicResource S.Options.Upload.Imgur.Anonymous}"/>
-                                                <ComboBoxItem Tag="{x:Static u:UploadService.Imgur}" Content="Imgur"/>
-                                                <ComboBoxItem Tag="{x:Static u:UploadService.GfycatAnonymous}" Content="{DynamicResource S.Options.Upload.Gfycat.Anonymous}"/>
-                                                <ComboBoxItem Tag="{x:Static u:UploadService.Yandex}" Content="YandexDisk"/>
-                                            </ComboBox>
-                                        </Grid>
-
                                         <n:ExtendedCheckBox Grid.Row="4" x:Name="CopyFileCheckBox" Text="{DynamicResource S.SaveAs.SaveOptions.CopyToClipboard}" Margin="10,3,3,3"
                                                             IsChecked="{Binding Source={x:Static u:UserSettings.All}, Path=SaveToClipboard}" 
                                                             Checked="SaveToClipboard_CheckedChanged"/>

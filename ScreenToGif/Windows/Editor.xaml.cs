@@ -5783,19 +5783,7 @@ namespace ScreenToGif.Windows
 
         private bool GetUploadFile()
         {
-            switch (UserSettings.All.SaveType)
-            {
-                case Export.Gif:
-                    return UserSettings.All.UploadFile;
-                case Export.Apng:
-                case Export.Video:
-                case Export.Project:
-                case Export.Images:
-                case Export.Photoshop:
-                    return false;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+			return false;
         }
 
         private bool GetSaveToClipboard()
