@@ -224,8 +224,6 @@
                                     <n:ExtendedCheckBox Text="{DynamicResource S.Options.App.General.CheckForTranslationUpdates}" Margin="5,3" VerticalAlignment="Top" IsChecked="{Binding Path=CheckForTranslationUpdates, Mode=TwoWay}"/>
                                     <TextBlock Text="{DynamicResource S.Options.App.General.CheckForTranslationUpdates.Info}" Padding="0" Margin="5,0,0,0" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="{DynamicResource Element.Foreground.Gray150}"/>
                                 </WrapPanel>
-
-                                <n:ExtendedCheckBox x:Name="UpdatesCheckBox" Text="{DynamicResource S.Options.App.General.CheckForUpdates}" Margin="15,3,5,3" IsChecked="{Binding Path=CheckForUpdates, Mode=TwoWay}"/>
                             </StackPanel>
                         </Expander>
                     </Grid>

@@ -523,7 +523,7 @@ namespace ScreenToGif.Util
 
         public bool CheckForUpdates
         {
-            get => (bool)GetValue();
+            get => false; //force disable updates
             set => SetValue(value);
         }
 
